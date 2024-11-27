@@ -1,0 +1,17 @@
+ensure_path('TEXINPUTS', '..');
+my @subdirs = grep { -d } glob '*';
+
+#parte 1
+#my @subdirs = qw(capa contracapa dialogo efemerides epistola);
+
+#parte 2
+#my @subdirs = qw(historia paradoxo problema teorema);
+
+
+open(LOGH, "+>hip.log") or die $!;
+print LOGH "$datestring\n";
+
+for my $dir (@subdirs) {
+  print LOGH `cd $dir; latexmk -lualatex  $dir; cd -`;
+}
+
