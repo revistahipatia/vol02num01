@@ -292,7 +292,7 @@ Portanto, \(b_{2}\left(b_{1} - a_{1}\right) - b_{1}\left(b_{2} - a_{2}\right) = 
 Por fim, o Lema da Quantidade de Termos (LQT). Ele nos fornece uma fórmula recursiva para determinar quantos termos existem em uma sequência de Farey de ordem n. Essa relação recursiva depende da função Totiente de Euler, $\varphi(n)$, indicando que a quantidade de termos adicionados de uma ordem para outra está relacionada aos inteiros coprimos a n. Esse resultado também serve de ponto de partida para deduzir outras propriedades, como a fórmula fechada para a quantidade de termos.
 
 \begin{lemma*} (da Quantidade de Termos)
-    A quantidade de termos da sequência de Farey \(F_{n}\) é dado pela seguinte fórmula recursiva:
+    A quantidade de termos da sequência de Farey \(F_{n}\) é dada pela seguinte fórmula recursiva:
 
 \[
 \left|\mathrm{F}_{n}\right|=\left|\mathrm{F}_{n-1}\right|+\varphi(n) .
@@ -309,7 +309,7 @@ $$
 \left|F_n\right| = 1 + \sum_{k=1}^{n} \varphi(k).
 $$
 
-Por sua vez, uma resultado bem conhecido é que 
+Por sua vez, um resultado bem conhecido é que 
 
 
 $$\lim _{n \rightarrow \infty} \frac{\sum_{k=1}^{n} \varphi(k)}{n^2}=\frac{3}{\pi^2}.$$
@@ -560,7 +560,7 @@ Ao restringirmos apenas aos pontos \((x, y)\) com \(x \leq y\), estamos contando
 
 \noindent \textbf{Problema 2.} Sejam $P$ e $Q$ polinômios inteiros. Suponha que, para todos os inteiros $a$ e $b$, $aP + bQ$ possui uma raiz inteira. Então $P$ e $Q$ possuem uma raiz inteira em comum.\vspace{0.2cm}
 
-\noindent\textbf{Solução.} Suponha que \( P \) e \( Q \) não têm raízes inteiras em comum. Vamos demonstrar que isso leva a uma contradição. Da suposição que \( P \) e \( Q \) não têm raízes inteiras em comum, temos que $(P(n),Q(n))\neq (0,0)$. Para cada $n\in\mathbb{N}$, a aplicação linear $T_n:\mathbb{R}^2\to\mathbb{R}$ dada por $T(x,y)=xP(n)+yQ(n)$ é subjetiva e seu kernel é um subespaço de dimensão 1 que passa pela origem, em outras palavras, o kernel de $T_n$, que chamaremos de $R_n$, é uma reta que passa pela origem e com coeficiente angular racional. Seja
+\noindent\textbf{Solução.} Suponha que \( P \) e \( Q \) não têm raízes inteiras em comum. Vamos demonstrar que isso leva a uma contradição. Da suposição que \( P \) e \( Q \) não têm raízes inteiras em comum, temos que $(P(n),Q(n))\neq (0,0)$. Para cada $n\in\mathbb{N}$, a aplicação linear $T_n:\mathbb{R}^2\to\mathbb{R}$ dada por $T(x,y)=xP(n)+yQ(n)$ é sobrejetiva e seu kernel é um subespaço de dimensão 1 que passa pela origem. Em outras palavras, o kernel de $T_n$, que chamaremos de $R_n$, é uma reta que passa pela origem e com coeficiente angular racional. Seja
 $$
 \mathbb{Z}_n^2/{\sim} = \{[(a,b)] : (a,b) \in \mathbb{Z}^2, 0 < |a|, |b| \leq n\}, 
 $$
