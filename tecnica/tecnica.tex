@@ -47,7 +47,7 @@ Um dos leitores do artigo de Farey foi ninguém menos que Augustin-Louis Cauchy,
 
 A ironia, porém, é que Farey não foi o primeiro a descobrir as propriedades da sequência. Charles Haros, um matemático menos conhecido, já havia, em 1802, identificado a propriedade e até mesmo explicado como construir a 99\superau sequência. Infelizmente para Haros, seu trabalho não recebeu o reconhecimento devido na época, e ele acabou sendo ofuscado pela publicação de Farey.
 
-O caso das sequências de Farey ilustra como a história da matemática, assim como outras áreas do conhecimento, pode ser permeada por acasos e injustiças. Farey, apesar de sua contribuição modesta, acabou imortalizado por uma descoberta que não era originalmente sua. Em A Mathematician's Apology, G. H. Hardy comenta ironicamente: ``... Farey é imortal porque não conseguiu entender um teorema que Haros havia provado perfeitamente quatorze anos antes...''.
+O caso das sequências de Farey ilustra como a história da matemática, assim como outras áreas do conhecimento, pode ser permeada por acasos e injustiças. Farey, apesar de sua contribuição modesta, acabou imortalizado por uma descoberta que não era originalmente sua. Em \textit{A Mathematician's Apology}, G. H. Hardy comenta ironicamente: ``... Farey é imortal porque não conseguiu entender um teorema que Haros havia provado perfeitamente quatorze anos antes...''.
 
 Apesar da controvérsia em torno da autoria das descobertas sobre suas propriedades, as sequências de Farey passaram a ser estudadas na teoria dos números, com diversas aplicações, incluindo a aproximação racional de números irracionais e contribuições importantes à geometria. 
 
@@ -59,7 +59,7 @@ Em todos os resultados, demonstrações e soluções daqui em diante, assumiremo
 
 Para fins didáticos, iniciemos com o algoritmo para a construção, que nos levará a um diagrama, e por fim chegaremos à definição limpa e direta. Começamos com a sequência de ordem 1, representada por:
 \[
-F_1 = \left\{ \frac{0}{1}, \frac{1}{1} \right\}
+F_1 = \left\{ \frac{0}{1}, \frac{1}{1} \right\}.
 \]
 
 Para construir a sequência de ordem \(n\), denotada por \(F_n\), a partir da sequência de ordem \(n-1\), denotada por \(F_{n-1}\), siga os seguintes passos de forma detalhada:
@@ -110,15 +110,15 @@ Finalmente, uma definição direta da sequência de Farey de ordem \( n \):
 \begin{definition*}
     A \textit{sequência de Farey de ordem \( n \)}, denotada por \( F_n \), é o conjunto de frações racionais \(\frac{r}{s}\), onde \(0 \leq r \leq s \leq n\), com \(\text{mdc}(r, s) = 1\), dispostas em ordem crescente, incluindo os extremos \(0 = \frac{0}{1}\) e \(1 = \frac{n}{n}\). 
 \end{definition*}
-    Cabe obervar que cada elemento da sequência de Farey é uma fração irredutível cujo denominador é menor ou igual a \(n\). Além disso, a sequência \(F_n\) contém todas as frações que podem ser formadas nesse intervalo, de modo que frações consecutivas satisfazem a condição de estarem na menor forma e ordenadas de maneira crescente.
+    Cabe observar que cada elemento da sequência de Farey é uma fração irredutível cujo denominador é menor ou igual a \(n\). Além disso, a sequência \(F_n\) contém todas as frações que podem ser formadas nesse intervalo, de modo que frações consecutivas satisfazem a condição de estarem na menor forma e ordenadas de maneira crescente.
 
 
 \section{Propriedades básicas}
 
 Nesta seção, começamos explorando a relação fundamental entre frações consecutivas, descrita pelo Teorema da Vizinhança de Farey (TVF). Este teorema nos fornece uma condição necessária e suficiente para que duas frações sejam vizinhas em uma sequência de Farey de ordem n. Tal critério é extremamente útil, pois permite identificar quais frações são mais próximas em termos de aproximação racional e também serve como base para outros resultados.
 
-\begin{theorem*} (da Vizinhança de Farey)
-Temos que \(\frac{a}{b} < \frac{c}{d}\) são frações consecutivas na sequência de Farey \(F_n\) se, e somente se, \(bc - ad = 1\) e $b+d\geq n+1$.
+\begin{theorem*} [da Vizinhança de Farey]
+As frações \(\frac{a}{b} < \frac{c}{d}\) são consecutivas na sequência de Farey \(F_n\) se, e somente se, \(bc - ad = 1\) e $b+d\geq n+1$.
 \end{theorem*}
 
 \begin{proof}
@@ -136,15 +136,15 @@ de modo que \(\frac{x}{y}\) aparece depois na sequência de Farey do que \(\frac
 \end{align*}
 bem como
 \begin{align*}
-\frac{c}{d} - \frac{a}{b} = \frac{bc - ad}{bd} \geq \frac{1}{bd}
+\frac{c}{d} - \frac{a}{b} = \frac{bc - ad}{bd} \geq \frac{1}{bd}.
 \end{align*}
 Somando as duas desigualdades, obtemos
 \begin{align*}
-\frac{x}{y} - \frac{a}{b} \geq \frac{1}{dy} + \frac{1}{bd} = \frac{b + y}{bdy}
+\frac{x}{y} - \frac{a}{b} \geq \frac{1}{dy} + \frac{1}{bd} = \frac{b + y}{bdy}.
 \end{align*}
 Mas \(b + y > n\) (lembre que \(n - b < y\)) e \(d \leq n\), resultando na contradição
 \begin{align*}
-\frac{1}{by} = \frac{bx - ay}{by} = \frac{x}{y} - \frac{a}{b} = \frac{b + y}{bdy} > \frac{n}{bdy} \geq \frac{1}{by}
+\frac{1}{by} = \frac{bx - ay}{by} = \frac{x}{y} - \frac{a}{b} = \frac{b + y}{bdy} > \frac{n}{bdy} \geq \frac{1}{by}.
 \end{align*}
 Assim, \(\frac{x}{y} = \frac{c}{d}\) e a equação \(bx - ay = 1\) torna-se \(bc - ad = 1\).
 \end{proof}
@@ -153,7 +153,7 @@ Daqui em diante, sempre que nos referirmos a frações que são termos consecuti
 
 O corolário a seguir, que nomearemos de Corolário da Mediante, revela uma característica interessante sobre frações consecutivas: a fração intermediária entre duas vizinhas de Farey é obtida através da soma dos numeradores e denominadores, resultando na chamada fração mediante. Esse corolário reforça a ideia de simetria e estrutura nas sequências de Farey, mostrando que frações mediantes surgem naturalmente e estão posicionadas entre as frações originais, conforme esperado.
 
-\begin{corollary*} (da Mediante)
+\begin{corollary*} [da Mediante]
 Se $\frac{a}{b}<\frac{a'}{b'}<\frac{a''}{b''}$ são vizinhas de Farey contidas em \(F_n\), então
 \[
 \frac{a'}{b'}=\frac{a+a''}{b+b''}.
@@ -212,7 +212,7 @@ Assim, obtemos:
 
 Vale notar que uma das consequências importantes do Teorema das Frações Vizinhas (TVF) foi estabelecer uma cota mínima para a soma dos denominadores de duas frações vizinhas, cota essa que se verifica ser a melhor possível. Uma pergunta natural que emerge é: será que para três frações vizinhas também existe uma cota mínima para a soma de seus denominadores? A resposta é afirmativa. Por ora, apresentaremos uma cota mínima menos refinada, reservando para a seção de Problemas Olímpicos a demonstração da melhor cota possível (que apareceu como problema 6 na OBM de 2024!).
 
-\begin{corollary*} (da Cota Mínima)
+\begin{corollary*} [da Cota Mínima]
 Se $\frac{a}{b}<\frac{a'}{b'}<\frac{a''}{b''}$ são frações vizinhas de Farey contidas em \(F_n\), então
 \[
 b+b'+b''\geq \left\lceil \frac{4(n+1)}{3} \right\rceil.
@@ -228,7 +228,7 @@ b+b'+b''\geq \left\lceil \frac{4(n+1)}{3} \right\rceil.
 $$
 \begin{aligned}
 \left(b+\frac{b+b^{\prime \prime}}{d}\right)+\left(b^{\prime \prime}+\frac{b+b^{\prime \prime}}{d}\right) & \geqslant 2(n+1) \\
-\Rightarrow \quad b+b^{\prime \prime} & \geqslant \frac{2 d(n+1)}{d+2}
+\Rightarrow \quad b+b^{\prime \prime} & \geqslant \frac{2 d(n+1)}{d+2}.
 \end{aligned}
 $$
 Assim, vale que 
@@ -249,7 +249,7 @@ Segue o resultado.
 
 Como próximo resultado, temos o que chamaremos de Corolário da Aproximação, pois ele quantifica a diferença entre uma fração e sua mediante. Essa estimativa não apenas caracteriza a aproximação entre frações, mas também demonstra como as mediantes são eficientes em dividir o espaço racional de maneira equilibrada. Este resultado, além de sua importância teórica, possui implicações práticas em problemas de aproximação racional de números reais.
 
-\begin{corollary*} (da Aproximação)
+\begin{corollary*}[da Aproximação]
 Se \(\frac{a}{b}\) e \(\frac{a'}{b'}\) são vizinhas de Farey contidas em \(F_n\), então
 \[
 \left| \frac{a}{b} - \frac{a + a'}{b + b'} \right| = \frac{1}{b(b + b')} \leq \frac{1}{b(n + 1)},
@@ -278,7 +278,7 @@ Basta repetir esses passos para provar que a segunda desigualdade também é ver
 
 O resultado a seguir mostra que, se tomarmos frações vizinhas em uma metade da sequência, há uma correspondência direta com frações na outra metade, formando um espelho perfeito. Essa propriedade é fundamental para compreender a estrutura palíndroma das sequências de Farey, uma característica que será explorada mais a fundo posteriormente.
 
-\begin{corollary*} (das Vizinhas Espelhadas)
+\begin{corollary*} [das Vizinhas Espelhadas]
     Se \(\frac{0}{1} \leq \ldots<\frac{\mathrm{a}_{1}}{\mathrm{~b}_{1}}<\frac{\mathrm{a}_{2}}{\mathrm{~b}_{2}}<\ldots \leq \frac{1}{2}\) são frações vizinhas na sequência de Farey, então \(\frac{1}{2} \leq \ldots<\frac{\mathrm{b}_{2}-\mathrm{a}_{2}}{\mathrm{~b}_{2}}<\frac{\mathrm{b}_{1}-\mathrm{a}_{1}}{\mathrm{~b}_{1}}<\ldots \leq \frac{1}{1}\) também são frações vizinhas.
 \end{corollary*}
 
@@ -290,9 +290,9 @@ Usando o \textit{TVF} nas primeiras frações consecutivas dadas, temos
 Portanto, \(b_{2}\left(b_{1} - a_{1}\right) - b_{1}\left(b_{2} - a_{2}\right) = b_{1} a_{2} - a_{1} b_{2} = 1\). O restante é imediato.
 \end{proof}
 
-Por fim, o Lema da Quantidade de Termos (LQT). Ele nos fornece uma fórmula recursiva para determinar quantos termos existem em uma sequência de Farey de ordem n. Essa relação recursiva depende da função Totiente de Euler, $\varphi(n)$, indicando que a quantidade de termos adicionados de uma ordem para outra está relacionada aos inteiros coprimos a n. Esse resultado também serve de ponto de partida para deduzir outras propriedades, como a fórmula fechada para a quantidade de termos.
+Por fim, o Lema da Quantidade de Termos (LQT). Ele nos fornece uma fórmula recursiva para determinar quantos termos existem em uma sequência de Farey de ordem $n$. Essa relação recursiva depende da função Totiente de Euler, $\varphi(n)$, indicando que a quantidade de termos adicionados de uma ordem para outra está relacionada aos inteiros coprimos a $n$. Esse resultado também serve de ponto de partida para deduzir outras propriedades, como a fórmula fechada para a quantidade de termos.
 
-\begin{lemma*} (da Quantidade de Termos)
+\begin{lemma*} [da Quantidade de Termos]
     A quantidade de termos da sequência de Farey \(F_{n}\) é dada pela seguinte fórmula recursiva:
 
 \[
@@ -319,14 +319,14 @@ $$\lim _{n \rightarrow \infty} \frac{\sum_{k=1}^{n} \varphi(k)}{n^2}=\frac{3}{\p
 
 \section{Propriedades Especiais}
 
-Embora os resultados presentes nesta seção também sejam propriedades das sequências de Farey, eles são menos conhecidos, mas não menos belos e importantes. Para começar, temos o
+Embora os resultados presentes nesta seção também sejam propriedades das sequências de Farey, eles são menos conhecidos, mas não menos belos e importantes. Para começar, temos o:
 \begin{theorem*}
 Na sequência de Farey \(F_{n}\), a soma dos elementos no denominador é duas vezes a soma dos elementos no numerador para todo inteiro positivo \(n\).
 \end{theorem*} 
 \begin{proof}
-Um lema que será útil nesta demonstração é o
+Um lema que será útil nesta demonstração é o:
 
-\noindent \textbf{Lema.} (Auxiliar)
+\noindent \textbf{Lema} (Auxiliar)\textbf{.}
     Para todos os inteiros \(n \geq 0\) e \(k \geq 0\),
 
 \[
@@ -352,13 +352,13 @@ N_{n} &= N_{n-1} + \sum_{\operatorname{mdc}(n, k) = 1} k, \quad \text{\footnotes
 Assim, pelo PIF, o resultado segue.
 \end{proof} 
 
-Um resultado interessantíssimo sobre a estrutura dos denominadores em uma sequência de Farey é que eles formam uma sequência palindrômica. Antes, cabe a
+Um resultado interessantíssimo sobre a estrutura dos denominadores em uma sequência de Farey é que eles formam uma sequência palindrômica. Antes, cabe a:
 
 \begin{definition*}
     Uma palavra ou sequência é chamada de \textit{palíndroma} se sua leitura é idêntica tanto da esquerda para a direita quanto da direita para a esquerda. Palíndromos surgem em várias áreas, incluindo linguística, matemática e música. Exemplos incluem as palavras ``ANA'', ``OSSO'' e ``RADAR'', bem como os números ``101'', ``1001'' e ``12321''.
 \end{definition*}
 
-Com isso, podemos enunciar o
+Com isso, podemos enunciar o:
 
 
 \begin{theorem*}
@@ -421,7 +421,7 @@ Recorde o \textit{Corolário da Aproximação}, que afirma
 \left| \frac{a}{b} - \frac{a + c}{b + d} \right| = \frac{1}{b(b + d)} \leq \frac{1}{b(n + 1)}.
 \]
 
-Agora, suponha que um número real \(x\) esteja entre as frações \(\frac{a}{b}\) e \(\frac{a + c}{b + d}\). Então, pelo novamente pelo \textit{Corolário da Aproximação} ,
+Agora, suponha que um número real \(x\) esteja entre as frações \(\frac{a}{b}\) e \(\frac{a + c}{b + d}\). Então, pelo novamente pelo \textit{Corolário da Aproximação},
 \[
 \left| x - \frac{a}{b} \right| \leq \left| \frac{a}{b} - \frac{a + c}{b + d} \right| \leq \frac{1}{b(n + 1)}.
 \]
@@ -438,7 +438,7 @@ Se \( \xi \) é um número real e irracional, então existem infinitas frações
 \end{theorem*}
 
 \begin{proof}
-Para qualquer inteiro \( n > 0 \), podemos encontrar \( a_n \) e \( b_n \) usando o Teorema 5, onde \( 0 < b_n \leq n \) e
+Para qualquer inteiro \( n > 0 \), podemos encontrar \( a_n \) e \( b_n \) usando o Teorema 5, onde \( 0 < b_n \leq n \) e %%% => qual é o Teorema 5??
 \[
 \left| \xi - \frac{a_n}{b_n} \right| < \frac{1}{b_n(n + 1)}.
 \]
