@@ -117,7 +117,7 @@ Finalmente, uma definição direta da sequência de Farey de ordem \( n \):
 
 Nesta seção, começamos explorando a relação fundamental entre frações consecutivas, descrita pelo Teorema da Vizinhança de Farey (TVF). Este teorema nos fornece uma condição necessária e suficiente para que duas frações sejam vizinhas em uma sequência de Farey de ordem n. Tal critério é extremamente útil, pois permite identificar quais frações são mais próximas em termos de aproximação racional e também serve como base para outros resultados.
 
-\begin{theorem*} (da Vizinhança de Farey)
+\begin{theorem*} [da Vizinhança de Farey]
 As frações \(\frac{a}{b} < \frac{c}{d}\) são consecutivas na sequência de Farey \(F_n\) se, e somente se, \(bc - ad = 1\) e $b+d\geq n+1$.
 \end{theorem*}
 
@@ -153,7 +153,7 @@ Daqui em diante, sempre que nos referirmos a frações que são termos consecuti
 
 O corolário a seguir, que nomearemos de Corolário da Mediante, revela uma característica interessante sobre frações consecutivas: a fração intermediária entre duas vizinhas de Farey é obtida através da soma dos numeradores e denominadores, resultando na chamada fração mediante. Esse corolário reforça a ideia de simetria e estrutura nas sequências de Farey, mostrando que frações mediantes surgem naturalmente e estão posicionadas entre as frações originais, conforme esperado.
 
-\begin{corollary*} (da Mediante)
+\begin{corollary*} [da Mediante]
 Se $\frac{a}{b}<\frac{a'}{b'}<\frac{a''}{b''}$ são vizinhas de Farey contidas em \(F_n\), então
 \[
 \frac{a'}{b'}=\frac{a+a''}{b+b''}.
@@ -212,7 +212,7 @@ Assim, obtemos:
 
 Vale notar que uma das consequências importantes do Teorema das Frações Vizinhas (TVF) foi estabelecer uma cota mínima para a soma dos denominadores de duas frações vizinhas, cota essa que se verifica ser a melhor possível. Uma pergunta natural que emerge é: será que para três frações vizinhas também existe uma cota mínima para a soma de seus denominadores? A resposta é afirmativa. Por ora, apresentaremos uma cota mínima menos refinada, reservando para a seção de Problemas Olímpicos a demonstração da melhor cota possível (que apareceu como problema 6 na OBM de 2024!).
 
-\begin{corollary*} (da Cota Mínima)
+\begin{corollary*} [da Cota Mínima]
 Se $\frac{a}{b}<\frac{a'}{b'}<\frac{a''}{b''}$ são frações vizinhas de Farey contidas em \(F_n\), então
 \[
 b+b'+b''\geq \left\lceil \frac{4(n+1)}{3} \right\rceil.
@@ -278,7 +278,7 @@ Basta repetir esses passos para provar que a segunda desigualdade também é ver
 
 O resultado a seguir mostra que, se tomarmos frações vizinhas em uma metade da sequência, há uma correspondência direta com frações na outra metade, formando um espelho perfeito. Essa propriedade é fundamental para compreender a estrutura palíndroma das sequências de Farey, uma característica que será explorada mais a fundo posteriormente.
 
-\begin{corollary*} (das Vizinhas Espelhadas)
+\begin{corollary*} [das Vizinhas Espelhadas]
     Se \(\frac{0}{1} \leq \ldots<\frac{\mathrm{a}_{1}}{\mathrm{~b}_{1}}<\frac{\mathrm{a}_{2}}{\mathrm{~b}_{2}}<\ldots \leq \frac{1}{2}\) são frações vizinhas na sequência de Farey, então \(\frac{1}{2} \leq \ldots<\frac{\mathrm{b}_{2}-\mathrm{a}_{2}}{\mathrm{~b}_{2}}<\frac{\mathrm{b}_{1}-\mathrm{a}_{1}}{\mathrm{~b}_{1}}<\ldots \leq \frac{1}{1}\) também são frações vizinhas.
 \end{corollary*}
 
@@ -292,7 +292,7 @@ Portanto, \(b_{2}\left(b_{1} - a_{1}\right) - b_{1}\left(b_{2} - a_{2}\right) = 
 
 Por fim, o Lema da Quantidade de Termos (LQT). Ele nos fornece uma fórmula recursiva para determinar quantos termos existem em uma sequência de Farey de ordem $n$. Essa relação recursiva depende da função Totiente de Euler, $\varphi(n)$, indicando que a quantidade de termos adicionados de uma ordem para outra está relacionada aos inteiros coprimos a $n$. Esse resultado também serve de ponto de partida para deduzir outras propriedades, como a fórmula fechada para a quantidade de termos.
 
-\begin{lemma*} (da Quantidade de Termos)
+\begin{lemma*} [da Quantidade de Termos]
     A quantidade de termos da sequência de Farey \(F_{n}\) é dada pela seguinte fórmula recursiva:
 
 \[
@@ -326,7 +326,7 @@ Na sequência de Farey \(F_{n}\), a soma dos elementos no denominador é duas ve
 \begin{proof}
 Um lema que será útil nesta demonstração é o:
 
-\noindent \textbf{Lema.} (Auxiliar)
+\noindent \textbf{Lema} (Auxiliar)\textbf{.}
     Para todos os inteiros \(n \geq 0\) e \(k \geq 0\),
 
 \[
