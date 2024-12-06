@@ -74,7 +74,7 @@ Para construir a sequência de ordem \(n\), denotada por \(F_n\), a partir da se
     \begin{itemize}
         \item Para cada par de frações consecutivas \(\frac{a}{b}\) e \(\frac{a'}{b'}\) em \(F_{n-1}\), calcule a fração mediante entre elas, dada pela fórmula:
         \[
-        \text{Mediante} = \frac{a + a'}{b + b'}
+        \text{Mediante} = \frac{a + a'}{b + b'}.
         \]
         \item A fração mediante é obtida somando os numeradores e os denominadores das frações consecutivas.
     \end{itemize}
@@ -124,15 +124,15 @@ As frações \(\frac{a}{b} < \frac{c}{d}\) são consecutivas na sequência de Fa
 \begin{proof}
 Como \(\operatorname{mdc}(a, b) = 1\), a equação linear \(bx - ay = 1\) tem uma solução \(x = x_0\), \(y = y_0\). Além disso, \(x = x_0 + at\), \(y = y_0 + bt\) também será uma solução para qualquer inteiro \(t\). Escolha \(t = t_0\) de forma que
 \begin{align*}
-0 \leq n - b < y_0 + bt_0 \leq n
+0 \leq n - b < y_0 + bt_0 \leq n,
 \end{align*}
 e defina \(x = x_0 + bt_0\), \(y = y_0 + bt_0\). Como \(y \leq n\), \(\frac{x}{y}\) será uma fração em \(F_n\). Além disso,
 \[
-\frac{x}{y} = \frac{a}{b} + \frac{1}{by} > \frac{a}{b}
+\frac{x}{y} = \frac{a}{b} + \frac{1}{by} > \frac{a}{b},
 \]
 de modo que \(\frac{x}{y}\) aparece depois na sequência de Farey do que \(\frac{a}{b}\). Se \(\frac{x}{y} \neq \frac{c}{d}\), então \(\frac{x}{y} > \frac{c}{d}\) e obtemos
 \begin{align*}
-\frac{x}{y} - \frac{c}{d} = \frac{dx - cy}{dy} \geq \frac{1}{dy}
+\frac{x}{y} - \frac{c}{d} = \frac{dx - cy}{dy} \geq \frac{1}{dy},
 \end{align*}
 bem como
 \begin{align*}
@@ -204,13 +204,11 @@ a'(b + b'') = b'(a + a'').
 Assim, obtemos:
 
 \[
-\dfrac{a'}{b'} = \dfrac{a + a''}{b + b''}.
+\dfrac{a'}{b'} = \dfrac{a + a''}{b + b''}.\qedhere
 \]
-
-
 \end{proof}
 
-Vale notar que uma das consequências importantes do Teorema das Frações Vizinhas (TVF) foi estabelecer uma cota mínima para a soma dos denominadores de duas frações vizinhas, cota essa que se verifica ser a melhor possível. Uma pergunta natural que emerge é: será que para três frações vizinhas também existe uma cota mínima para a soma de seus denominadores? A resposta é afirmativa. Por ora, apresentaremos uma cota mínima menos refinada, reservando para a seção de Problemas Olímpicos a demonstração da melhor cota possível (que apareceu como problema 6 na OBM de 2024!).
+Vale notar que uma das consequências importantes do TVF foi estabelecer uma cota mínima para a soma dos denominadores de duas frações vizinhas, cota essa que se verifica ser a melhor possível. Uma pergunta natural que emerge é: será que para três frações vizinhas também existe uma cota mínima para a soma de seus denominadores? A resposta é afirmativa. Por ora, apresentaremos uma cota mínima menos refinada, reservando para a seção de Problemas Olímpicos a demonstração da melhor cota possível (que apareceu como problema 6 na OBM de 2024!).
 
 \begin{corollary*} [da Cota Mínima]
 Se $\frac{a}{b}<\frac{a'}{b'}<\frac{a''}{b''}$ são frações vizinhas de Farey contidas em \(F_n\), então
@@ -242,12 +240,11 @@ b+b^{\prime}+b^{\prime \prime} & =b+b^{\prime \prime}+\frac{b+b^{\prime \prime}}
 \end{aligned}
 $$
 
-Segue o resultado.
-    
+Segue o resultado.    
 \end{proof}
 
 
-Como próximo resultado, temos o que chamaremos de Corolário da Aproximação, pois ele quantifica a diferença entre uma fração e sua mediante. Essa estimativa não apenas caracteriza a aproximação entre frações, mas também demonstra como as mediantes são eficientes em dividir o espaço racional de maneira equilibrada. Este resultado, além de sua importância teórica, possui implicações práticas em problemas de aproximação racional de números reais.
+Como próximo resultado, temos o que chamaremos de Corolário da Aproximação, pois ele quantifica a diferença entre a mediante de duas frações e cada uma destas. Essa estimativa não apenas caracteriza a aproximação entre frações, mas também demonstra como as mediantes são eficientes em dividir o espaço racional de maneira equilibrada. Este resultado, além de sua importância teórica, possui implicações práticas em problemas de aproximação racional de números reais.
 
 \begin{corollary*}[da Aproximação]
 Se \(\frac{a}{b}\) e \(\frac{a'}{b'}\) são vizinhas de Farey contidas em \(F_n\), então
@@ -263,7 +260,7 @@ e
 
 
 \begin{proof}
-Usando o \textit{TVF}, sabemos que:
+Usando o TVF, sabemos que:
 \begin{align*}
 \left| \frac{a}{b} - \frac{a + a'}{b + b'} \right| &= \frac{|a(b + b') - b(a + a')|}{b(b + b')} \\
 &= \frac{|ab + ab' - ab - ba'|}{b(b + b')} = \frac{1}{b(b + b')}.
@@ -304,16 +301,16 @@ Por fim, o Lema da Quantidade de Termos (LQT). Ele nos fornece uma fórmula recu
     É imediato do processo de construção de $F_n$.
 \end{proof}
 
-Observe que o \textit{LQT} revela que a quantidade de elementos novos em \(F_{n}\), em comparação com \(F_{n-1}\), é dada por \(\varphi(n)\), onde $\varphi$ é função Totiente de Euler. Os valores inteiros \(1 \leq k < n\) que são coprimos com \(n\) aparecem no numerador dos novos membros de \(\mathrm{F}_{n}\), com o denominador de cada novo termo em \(\mathrm{F}_{n}\) sendo sempre igual a \(n\). Assim, uma rápida contagem nos leva a
+Observe que o LQT revela que a quantidade de elementos novos em \(F_{n}\), em comparação com \(F_{n-1}\), é dada por \(\varphi(n)\). Os valores inteiros \(1 \leq k < n\) que são coprimos com \(n\) aparecem no numerador dos novos membros de \(\mathrm{F}_{n}\), com o denominador de cada novo termo em \(\mathrm{F}_{n}\) sendo sempre igual a \(n\). Assim, uma rápida contagem nos leva a
 
 $$
 \left|F_n\right| = 1 + \sum_{k=1}^{n} \varphi(k).
 $$
 
-Por sua vez, um resultado bem conhecido é que 
-
-
-$$\lim _{n \rightarrow \infty} \frac{\sum_{k=1}^{n} \varphi(k)}{n^2}=\frac{3}{\pi^2}.$$
+Por outro lado, do seguinte resultado bem conhecido 
+$$\lim _{n \rightarrow \infty} \frac{\sum_{k=1}^{n} \varphi(k)}{n^2}=\frac{3}{\pi^2},$$ 
+resulta que 
+$$\lim _{n \rightarrow \infty} \frac{\left|F_n\right|-1}{n^2}=\frac{3}{\pi^2}.$$
 
 
 
@@ -328,11 +325,9 @@ Um lema que será útil nesta demonstração é o:
 
 \noindent \textbf{Lema} (Auxiliar)\textbf{.}
     Para todos os inteiros \(n \geq 0\) e \(k \geq 0\),
-
 \[
-\sum_{(k, n)=1} k=\frac{n \varphi(n)}{2}
+\sum_{\operatorname{mdc}(k, n)=1} k=\frac{n \varphi(n)}{2}.
 \]
-
 
 \noindent \textit{Demonstração do Lema.} Se \(\operatorname{mdc}(n, k)=1\), então \(\operatorname{mdc}(n, n-k)=1\). Note que \(k\) não pode ser igual a \(n-k\), pois, caso contrário, \(\operatorname{mdc}(n, n)\) não seria \(1\). O número de elementos coprimos com \(n\) é \(\varphi(n)\). Assim, ao parear \(k\) e \(n-k\), obtemos que a soma total é \(\frac{n \varphi(n)}{2}\)
 \qed
@@ -342,14 +337,17 @@ Um lema que será útil nesta demonstração é o:
     Seja \(N_{n}\) a soma dos elementos no numerador da \(n\)-ésima sequência de Farey \(F_{n}\) e \(D_{n}\) a soma dos elementos no denominador da \(n\)-ésima sequência de Farey. Para \(n=1, N_{1}=1\) e \(\mathrm{D}_{1}=2\), o que nos dá que
 \(D_{1}=2 N_{1}\). Agora assumimos que o resultado vale para \(n-1\). Provemos que o resultado vale para \(n\):
 \begin{align*}
-N_{n} &= N_{n-1} + \sum_{\operatorname{mdc}(n, k) = 1} k, \quad \text{\footnotesize (usando o \textit{LQT})} \\
+N_{n} &= N_{n-1} + \sum_{\operatorname{mdc}(n, k) = 1} k \quad \text{\footnotesize (usando o \textit{LQT})} \\
 &= N_{n-1} + \frac{n \varphi(n)}{2}, \quad \text{\footnotesize (usando o Lema Auxiliar)} \\[10pt]
-\mathrm{D}_{n} &= D_{n-1} + n \varphi(n), \quad \text{\footnotesize (usando o \textit{LQT})} \\
-&= 2 N_{n-1} + n \varphi(n), \quad \text{\footnotesize (usando a hipótese de indução)} \\
-&= 2 \left( N_{n-1} + \frac{n \varphi(n)}{2} \right) \\
-&= 2 N_{n}
 \end{align*}
-Assim, pelo PIF, o resultado segue.
+e também
+\begin{align*}
+\mathrm{D}_{n} &= D_{n-1} + n \varphi(n) \quad \text{\footnotesize (usando o \textit{LQT})} \\
+&= 2 N_{n-1} + n \varphi(n) \quad \text{\footnotesize (usando a hipótese de indução)} \\
+&= 2 \left( N_{n-1} + \frac{n \varphi(n)}{2} \right) \\
+&= 2 N_{n}.
+\end{align*}
+Assim, pelo Princípio da Indução Finita, o resultado segue.
 \end{proof} 
 
 Um resultado interessantíssimo sobre a estrutura dos denominadores em uma sequência de Farey é que eles formam uma sequência palindrômica. Antes, cabe a:
@@ -373,7 +371,7 @@ Provamos este teorema por indução. Em \(F_{1}\), os denominadores são \(1, 1\
 F_{n-1} = \left\{ \frac{0}{1}, \ldots, \frac{r_{1}}{s_{1}}, \frac{r_{2}}{s_{2}}, \ldots, \frac{1}{2}, \ldots, \frac{s_{2} - r_{2}}{s_{2}}, \frac{s_{1} - r_{1}}{s_{1}}, \ldots, \frac{1}{1} \right\}
 \]
 
-Suponha que, na próxima sequência \(F_{n}\), um novo termo apareça entre \(\frac{r_{1}}{s_{1}}\) e \(\frac{r_{2}}{s_{2}}\). Seja \(r_{1} + r_{2} = k\). Temos as seguintes relações, usando o \textit{TVF}: \(s_{1} + s_{2} = n\) e \(\operatorname{mdc}(n, k) = 1\).
+Suponha que, na próxima sequência \(F_{n}\), um novo termo apareça entre \(\frac{r_{1}}{s_{1}}\) e \(\frac{r_{2}}{s_{2}}\). Seja \(r_{1} + r_{2} = k\). Temos as seguintes relações, usando o TVF: \(s_{1} + s_{2} = n\) e \(\operatorname{mdc}(n, k) = 1\).
 Agora, \((s_{1} - r_{1}) + (s_{2} - r_{2}) = n - k\).\\
 Assim, podemos escrever \(F_{n}\) em termos de \(n\) e \(k\) da seguinte forma:
 
@@ -421,9 +419,9 @@ Recorde o \textit{Corolário da Aproximação}, que afirma
 \left| \frac{a}{b} - \frac{a + c}{b + d} \right| = \frac{1}{b(b + d)} \leq \frac{1}{b(n + 1)}.
 \]
 
-Agora, suponha que um número real \(x\) esteja entre as frações \(\frac{a}{b}\) e \(\frac{a + c}{b + d}\). Então, pelo novamente pelo \textit{Corolário da Aproximação},
+Agora, suponha que um número real \(x\) esteja entre as frações \(\frac{a}{b}\) e \(\frac{a + c}{b + d}\). Então, novamente pelo \textit{Corolário da Aproximação},
 \[
-\left| x - \frac{a}{b} \right| \leq \left| \frac{a}{b} - \frac{a + c}{b + d} \right| \leq \frac{1}{b(n + 1)}.
+\left| x - \frac{a}{b} \right| \leq \left| \frac{a}{b} - \frac{a + c}{b + d} \right| \leq \frac{1}{b(n + 1)}.\qedhere
 \]
 \end{proof}
 
@@ -438,7 +436,7 @@ Se \( \xi \) é um número real e irracional, então existem infinitas frações
 \end{theorem*}
 
 \begin{proof}
-Para qualquer inteiro \( n > 0 \), podemos encontrar \( a_n \) e \( b_n \) usando o Teorema 5, onde \( 0 < b_n \leq n \) e %%% => qual é o Teorema 5??
+Para qualquer inteiro \( n > 0 \), podemos encontrar \( a_n \) e \( b_n \) usando o Teorema anterior, onde \( 0 < b_n \leq n \) e %%% => qual é o Teorema 5??
 \[
 \left| \xi - \frac{a_n}{b_n} \right| < \frac{1}{b_n(n + 1)}.
 \]
@@ -464,7 +462,7 @@ Isso significa que podemos encontrar um \( n \) suficientemente grande tal que
 
 Isso leva à contradição:
 \[
-\left| \xi - \frac{a_k}{b_k} \right| \leq \left| \xi - \frac{a_n}{b_n} \right| \leq \frac{1}{b(n+1)} \leq \frac{1}{n+1} < \left| \xi - \frac{a_k}{b_k} \right|.
+\left| \xi - \frac{a_k}{b_k} \right| \leq \left| \xi - \frac{a_n}{b_n} \right| \leq \frac{1}{b(n+1)} \leq \frac{1}{n+1} < \left| \xi - \frac{a_k}{b_k} \right|.\qedhere
 \]
 \end{proof}
 
@@ -473,9 +471,8 @@ Em seguida, apresentamos o famoso Teorema de Hurwitz, que também faz uso das se
 \begin{theorem*} [Hurwitz]
 Dado um número irracional \(\xi\), existem infinitos números racionais \(\frac{h}{k}\) tais que
 \[
-\left| \xi - \frac{h}{k} \right| < \frac{1}{\sqrt{5}k^2}
+\left| \xi - \frac{h}{k} \right| < \frac{1}{\sqrt{5}k^2}.
 \]
-tem infinitas soluções racionais \(\frac{p}{q}\).
 \end{theorem*}
 
 \begin{proof}
@@ -492,9 +489,9 @@ Suponha que nenhuma das três frações satisfaça a desigualdade. Isso signific
 \xi - \frac{a}{b} \geq \frac{1}{\sqrt{5}b^2}, \quad \xi - \frac{e}{f} \geq \frac{1}{\sqrt{5}f^2}, \quad \frac{c}{d} - \xi \geq \frac{1}{\sqrt{5}d^2}.
 \]
 
-Note que estamos assumindo que \(\xi\) está entre \(\frac{e}{f}\) e \(\frac{c}{d}\), o que torna \(\xi\) negativo na última equação devido ao uso de valores absolutos. Também observe que igualdades podem ocorrer.
+Note que estamos assumindo que \(\xi\) está entre \(\frac{e}{f}\) e \(\frac{c}{d}\), o explica os sinais na última inequação devido ao uso de valores absolutos. Também observe que igualdades podem ocorrer.
 
-Agora, se somarmos a primeira e a terceira desigualdade, e a segunda e a terceira desigualdade, ficamos com as duas desigualdades
+Agora, se somarmos a primeira e a terceira desigualdades, e a segunda e a terceira desigualdades, ficamos com as duas desigualdades
 \[
 \frac{c}{d} - \frac{a}{b} \geq \frac{1}{\sqrt{5}} \left( \frac{1}{b^2} + \frac{1}{d^2} \right), \quad \frac{c}{d} - \frac{e}{f} \geq \frac{1}{\sqrt{5}} \left( \frac{1}{f^2} + \frac{1}{d^2} \right).
 \]
@@ -510,9 +507,11 @@ Assim, restam as duas desigualdades
 \]
 
 Se multiplicarmos a primeira desigualdade por \(\sqrt{5}b^2d^2\) e a segunda por \(\sqrt{5}d^2f^2\), e então somarmos os resultados, obtemos
-\[
-d\sqrt{5}(b + f) = d\sqrt{5}(2b + d) \geq b^2 + 2d^2 + f^2 = 2b^2 + 3d^2 + 2bd,
-\]
+\begin{align*}
+d\sqrt{5}(b + f) &= d\sqrt{5}(2b + d) \\
+ &\geq b^2 + 2d^2 + f^2 \\
+ &= 2b^2 + 3d^2 + 2bd,
+\end{align*}
 o que é equivalente a
 \[
 0 \geq \frac{1}{2} ((\sqrt{5} - 1)d - 2b)^2.
