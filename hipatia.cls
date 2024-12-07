@@ -169,9 +169,8 @@
 %\RequirePackage[euler-digits,small]{eulervm}
 \newcommand{\epistolapage}{1}
 \newcommand{\historiapage}{3}
-\newcommand{\paradoxopage}{27}
-\newcommand{\tecnicapage}{46}
-\newcommand{\simposiopage}{54}
-\newcommand{\problemapage}{62}
+\newcommand{\tecnicapage}{15}
+\newcommand{\simposiopage}{26}
+\newcommand{\problemapage}{36}
 \bibliographystyle{plain}
 \addto{\captionsbrazil}{\renewcommand{\refname}{Bibliografia}}
