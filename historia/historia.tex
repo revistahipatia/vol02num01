@@ -1,5 +1,7 @@
 \documentclass{hipatia}
 \usepackage{lipsum}
+\usepackage{caption}
+\usepackage{float}
 %Use \DeclareMathOperator para definir novos
 % operadores para o modo matemático
 \DeclareMathOperator{\sen}{sen}
@@ -59,6 +61,11 @@ A fim de nos situarmos no tempo histórico, cito o testemunho do escritor helên
 Os documentos mais abrangentes do saber geométrico egípcio são o papiro Rhind e o papiro de Moscou, que registraram regras para o cálculo da área de algumas figuras planares (como os triângulos, os quadriláteros e o disco) e o volume de alguns corpos (como o cubo, os paralelepípedos, o tronco de cilindro circular e o tronco de pirâmide de base quadrangular).
 
 Do papiro de Moscou, por exemplo, consta a regra para cálculo do volume de uma pirâmide quadrada e truncada, isto é, de uma pirâmide cuja base é um quadrado de lado igual a $B$ e da qual se retirou uma pirâmide a ela semelhante, cuja base fosse um quadrado de lado igual a $C$. O volume desse poliedro é calculado por $$\frac{H}{3}\left(B^2 + BC + C^2\right),$$ onde $H$ indica a altura vertical da pirâmide truncada, \cite[p. 7]{anglin1995}.
+
+\begin{figure}[htb!]
+    \includegraphics[width=8cm]{problema14.jpg}
+ \caption*{O problema 14 do Papiro de Moscou é um cálculo do volume de uma pirâmide truncada.}   
+\end{figure}
 
 Segundo uma tradição conservada pelo escritor grego Diógenes Laércio, que viveu pelo século III d.C., a geometria fora transmitida aos gregos por Tales de Mileto, que viajara pelo Egito, relato esse que se deve acolher com cautela pois também de outros intelectuais gregos (como Sólon de Atenas e Demócrito de Abdera) se narram viagens ao Egito, país que fora considerado pelos gregos como ``um repositório de conhecimento invulgar'', \cite[p. 11]{momigliano1991}.
 
@@ -143,6 +150,11 @@ Assim, segundo a visão do Estagirita, uma ciência dedutiva é um sistema $S$ d
 
 Afirmam os estudiosos da matemática helênica que os Elementos de Euclides  (século III a.C.)  tenham sido redigidos consoante a formulação descrita pelo Estagirita. Por exemplo, Evert Beth declarou que ``a matemática clássica constitui o exemplo por excelência, e talvez o único exemplo, de uma teoria dedutiva, consoante a teoria das ciências de Aristóteles''. \cite{beth1955}
 
+\begin{figure}[htb!]
+    \includegraphics[width=8cm]{Oxy.jpg}
+ \caption*{Papiro Oxyrhynchus (P.Oxy. I 29) mostrando fragmento dos Elementos de Euclides.}   
+\end{figure}
+
 A obra de Euclides é iniciada com uma lista de definições, das quais a primeira consiste em asseverar que ``\emph{um ponto é aquilo que não tem partes}''. Essas definições não são logicamente operativas. Constituem apenas elucidações vagas, nas quais termos usados na enunciação dos postulados e dos teoremas são parcialmente explicados mediante termos que não pertencem ao sistema.
 
 Alguns críticos supõem que, ao propor tais definições, Euclides estivesse explicitamente declarando que, na composição dos \emph{Elementos}, não seria adotada a concepção atômica esposada por Demócrito de Abdera. 
@@ -206,6 +218,11 @@ Dentre os tentamentos em se demonstrar o quinto postulado de Euclides o mais not
 (b)  Ambos os ângulos são retos. 
 (c)  Ambos os ângulos são obtusos.
 
+\begin{figure}[htb!]
+    \includegraphics[width=8cm]{Saccheri.jpg}
+ \caption*{Página de rosto de \emph{Euclide Ab Omni Naevo Vindicatus} (Euclides livre de qualquer falha), de Girolamo Saccheri, de 1733}   
+\end{figure}
+
 Em seguida, Saccheri mostrou que a segunda hipótese implicasse o postulado de Euclides e tentou mostrar que as duas outras hipóteses fossem falsas. Na verdade, seu tentamento em mostrar a falsidade das duas outras hipóteses produziu enunciados de um sistema geométrico distinto do euclidiano, os quais Saccheri, falaciosa mas indolosamente, supôs serem impossíveis.  \cite[p. 182]{kneebone1963}
 
 Coube a Nikolai Lobachevski a glória de haver composto, em 1826, o primeiro estudo explícito de um sistema geométrico distinto do adotado até então\footnote{
@@ -238,13 +255,21 @@ Impuseram-se, assim, dois novos problemas: a prova de consistência da geometria
 
 Um avanço na solução desses novos problemas foi obtido por Moritz Pasch que, nas \emph{Preleções sobre a nova geometria [Vorlesungen über neuere Geometrie (1882)]}, mediante a escolha judiciosa dos conceitos e dos juízos primitivos, tentou ``fundar empiricamente a geometria''. \cite[p. 151]{pasch1924} 
 
+
+
 Consoante a interpretação por da Costa, Pasch ``apresentou uma sistematização precisa da geometria comum como disciplina física''.  \cite[p. 193]{costa1994}
+
 
 Nessa obra, assim se exprimia Moritz Pasch: 
 \begin{quote}   
 Se quisermos que a geometria seja verdadeiramente dedutiva, o processo dedutivo deverá ser totalmente independente do significado [Sinn] dos conceitos geométricos assim como deverá ser independente das figuras. Somente as relações entre os conceitos geométricos que houverem sido explicitadas nas proposições e nas definições adotadas deverão ser consideradas. É verdade que, no curso de uma dedução, seja permitido e útil conservar no espírito a referência [\emph{Bedeutung}] dos conceitos geométricos empregados mas isso não é absolutamente necessário.  
 \cite[\emph{apud}, p. 283]{bottazzini2001}\cite[\emph{apud}, p. 654]{gandon2005}
 \end{quote}
+
+\begin{figure}[htb!]
+    \includegraphics[width=8cm]{pasch.jpg}
+ \caption*{Axioma de Pasch, extraído de suas ``Preleções'': Se $A$, $B$, $C$ são três pontos que não estão em linha reta, $D$ é um ponto na reta $AB$ entre $A$ e $B$, $g$ é uma reta no plano $ABC$ que passa por $D$, mas não por qualquer dos pontos $A$, $B$ e $C$, então $g$ encontra a reta $AC$ entre $A$ e $C$ ou a reta $BC$ entre $B$ e $C$. Os postulados de Euclides são insuficientes para mostrar esse fato tão simples. }   
+\end{figure}
 
 Ao propor axiomas para a geometria projetiva, Pasch acentuou, pela primeira vez, a relevância das noções não definidas explicitamente. \cite[p. 859]{kleiner1999}
 
@@ -273,6 +298,12 @@ Finalmente, após apresentar quatro ensaios desde 1894, Mario Pieri compôs os `
 \cite[p. 317]{bottazzini2001}
 
 Em seguida, David Hilbert publicou seus \emph{Fundamentos da geometria [Grundlagen der Geometrie, 1899]}, instaurando definitivamente a concepção de um sistema de postulados como definição implícita, concepção essa introduzida por Gergonne (1819) e praticada por Peano, Enriques e Pieri. 
+
+\begin{figure}[htb!]
+    \includegraphics[width=8cm]{Hilbert.jpeg}
+ \caption*{David Hilbert publicou o livro \emph{Grundlagen der Geometrie} em 1899, colocando a geometria dentro de um arcabouço axiomático formal. O livro continuou a aparecer em novas edições e foi uma grande influência na promoção da abordagem axiomática à matemática.}   
+\end{figure}
+
 
 Mediante esse método, se esvaziam as noções primitivas de qualquer conteúdo conceitual que não esteja implicado pelos postulados, cujos vínculos mútuos deixam de ser encarados como apenas a expressão de sua interdependência. Em um certo sentido, podemos dizer que a adoção das definições implícitas marcam a transição da \emph{axiomática material}  (proposta por Aristóteles)  para a \emph{axiomática formal}. \cite[p. 115]{beth1955}\cite[p. 691]{kneale}\cite[p. 201]{kneebone1963}
 
