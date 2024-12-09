@@ -1,0 +1,509 @@
+\documentclass{hipatia}
+\usepackage{lipsum}
+%Use \DeclareMathOperator para definir novos
+% operadores para o modo matemático
+\DeclareMathOperator{\sen}{sen}
+
+%Evite numerar teoremas
+%Prefira nomeá-los
+%Use os ambientes abaixo
+\newtheorem*{theorem*}{Teorema}
+\newtheorem*{lemma*}{Lema}
+
+% Evite títulos muito longos
+\title{Matemática e Matemáticos\\
+Pensamentos e Curiosidades}
+% Se for necessário diminuir a fonte do título 
+% para caber no quadro, use
+% \title{ \fontsize{28}{28}\selectfont Uma Nova Demonstração do\\  \fontsize{28}{28}\selectfont Teorema de Pitágoras}
+
+% O Subtítulo é o nome da seção da revista
+% Deve ser uma palavra de origem grega
+\subtitle{Antologia}
+\author{Alphonse Rebière}
+% A data não é necessária
+%\date{October 2023}
+% Não se preocupe com a numeração
+% das páginas ou com o número da edição
+
+\begin{document}
+\setcounter{page}{\antologiapage}
+\maketitle
+``\emph{Mathématiques et Mathématiciens: Pensées et Curiosités}'' de Alphonse Rebière é uma coleção de reflexões filosóficas e curiosidades relacionadas à matemática, escrita no final do século XIX. Esta obra explora vários conceitos matemáticos, teorias e a importância da matemática em diferentes campos por meio de \emph{insights} de pensadores históricos e contemporâneos. 
+Apresentamos aqui uma seleção de trechos desta \textsc{Antologia}.
+
+
+\section{Objeto e Caráter da Matemática}
+
+\begin{quote}
+Com o que a matemática se preocupa, senão com proporção e ordem?
+
+\hfill \textsc{Aristóteles}
+\end{quote}
+ 
+\begin{quote}
+Primeiro me perguntei o que exatamente todos queriam dizer com esta palavra (matemática), e por que não apenas a aritmética e a geometria eram consideradas parte da matemática, mas também a astronomia, a música, a óptica, a mecânica e várias outras ciências.
+
+(\dots)
+
+Não há ninguém, mesmo que tenha apenas tocado as soleiras das escolas, que não distinga facilmente, entre os objetos que lhe são apresentados, aqueles que estão ligados à matemática e aqueles que pertencem às outras ciências. Refletindo sobre isso, descobri finalmente que só devemos relacionar com a matemática todas as coisas nas quais examinamos a ordem ou a medida, e que pouco importa se é nos números, nas figuras, nas estrelas, nos sons ou em qualquer outro objeto que procuramos. medir.
+
+\hfill \textsc{Descartes}
+\end{quote}
+ 
+\begin{quote}
+As especulações matemáticas têm o carácter comum e essencial de estarem ligadas a duas ideias ou categorias fundamentais: a ideia de \emph{ordem} sob a qual é permitido classificar... as ideias de situação, configuração, forma e de combinação; e a ideia de \emph{magnitude} que envolve as de quantidade, proporção e medida.
+
+\hfill \textsc{Cournot}
+\end{quote}
+
+ 
+\begin{quote}
+Conseguimos, portanto, definir a ciência matemática com precisão, atribuindo ao seu objetivo a medição \emph{indireta} de quantidades e dizendo que ela visa constantemente \emph{determinar as quantidades umas pelas outras, de acordo com as relações precisas. que existem entre eles}. Esta afirmação, em vez de dar a ideia de uma \emph{arte}, caracteriza imediatamente uma verdadeira \emph{ciência}, e imediatamente mostra que ela é composta por uma imensa sequência de operações intelectuais que podem obviamente tornar-se muito complicadas, devido à série de intermediários que deverão ser estabelecidos entre as grandezas desconhecidas e aquelas que envolvem uma medição direta\dots  Segundo esta definição, a mente matemática consiste em vê-las sempre ligadas entre si, todas as grandezas que qualquer fenômeno pode apresentar, com o objetivo de deduzi-los um do outro.
+
+\hfill \textsc{A. Comte}
+\end{quote}
+
+\begin{quote}
+O matemático prepara antecipadamente moldes que o físico preencherá mais tarde.
+
+\hfill \textsc{Taine}
+\end{quote}
+ 
+
+\begin{quote}
+A matemática forma uma ponte, por assim dizer, entre a metafísica e a física.
+
+\hfill \textsc{Kant}
+\end{quote}
+
+ 
+\begin{quote}
+As verdades geométricas são, de certa forma, a assíntota das verdades físicas, isto é, o termo do qual elas podem se aproximar indefinidamente, sem nunca chegar lá exatamente.
+
+\hfill \textsc{D'Alembert}
+\end{quote}
+
+
+\section{Noções Primitivas}
+
+\begin{quote}
+Talvez achemos estranho que a geometria não possa definir nenhuma das coisas que tem como objetos principais; porque não define nem movimento, nem número, nem espaço; e no entanto estas três coisas são as que ela considera particularmente... Mas não nos surpreenderemos, se notarmos que esta admirável ciência só se liga às coisas mais simples, esta mesma qualidade que torna os seus objetos dignos de ser, torna-os incapazes de serem definidos; de modo que a indefinição é mais uma perfeição do que um defeito, porque não provém da sua obscuridade, mas pelo contrário da sua extrema obviedade\dots
+
+\hfill \textsc{Pascal}
+\end{quote}
+
+\begin{quote}
+A origem das noções matemáticas deu origem a controvérsias ainda pendentes entre os filósofos. Para alguns, os números e as figuras são tipos criados do nada pela mente e que se impõem às coisas da experiência, em virtude de uma misteriosa concordância entre o pensamento e a realidade externa. Para outros, pelo contrário, os números e os algarismos não constituem exceção a esta lei geral segundo a qual todo o conhecimento deriva, direta ou indiretamente, da experiência sensível. Num caso, as noções matemáticas seriam modelos; no outro, seriam cópias.
+
+Este não é o lugar para entrar nesta controvérsia e ponderar as razões apresentadas por ambos os lados. Basta-nos notar dois fatos: em primeiro lugar, qualquer que seja a opinião que professemos sobre a origem das noções matemáticas, não contestaremos que elas não são representações absolutamente exatas de realidades externas. A unidade é divisível em partes estritamente iguais; este não é o caso de um objeto real; nunca a metade, o quarto, o décimo deste objeto serão rigorosamente iguais à outra metade, a cada um dos outros três quartos, a cada um dos outros nove décimos, e ainda quanto mais as subdivisões se multiplicarem, mais a desigualdade real das peças aumentará. O círculo dos geômetras tem raios absolutamente iguais; este nunca será o caso dos raios de um círculo real; todos os pontos de uma superfície esférica são equidistantes do centro; este nunca será o caso dos raios de uma esfera material. Em segundo lugar, o matemático considera frequentemente números e figuras cujos modelos ele nunca encontrou na realidade. Qualquer divisão de um objeto real em partes iguais tem um limite que os nossos sentidos e os nossos instrumentos de precisão, mesmo os mais aperfeiçoados, são impotentes para ultrapassar; O pensamento do matemático ultrapassa facilmente esse limite e, além das menores divisões possíveis de um objeto, ele concebe outras divisões repetidas vezes \emph{ad infinitum}; da mesma forma existem limites para a adição de objetos; não é o das unidades matemáticas; a natureza rapidamente deixou de fornecer; a contagem nunca para. Da mesma forma, na geometria, por mais variadas que sejam as formas produzidas na natureza, há algumas cujas propriedades o geômetra estuda, sem nunca as ter encontrado no mundo exterior. Quem já viu um polígono regular com mil lados?
+
+Resulta deste duplo fato que, mesmo no caso em que a mente retira da experiência os primeiros elementos dos quais compõe as noções matemáticas, ela as elabora, transforma-as e não demora muito a libertar-se das sugestões experimentais.
+
+\hfill \textsc{Liard}
+\end{quote}
+
+ 
+
+\section{Métodos}
+
+
+\begin{quote}
+Existe na matemática um método para a busca da verdade, que se diz que Platão inventou, que Theon chamou de análise e que ele definiu assim: \emph{Olhe para a coisa procurada, como se ela fosse dada, e caminhe das consequências por consequências, até reconhecermos a coisa procurada como verdadeira.} Pelo contrário, a síntese é definida: \emph{Partindo de uma coisa dada, para chegar, de consequências a consequências, para encontrar uma coisa procurada.}
+
+\hfill \textsc{Viète}
+\end{quote}
+
+ 
+ 
+\begin{quote}
+Seria desejável que não deixássemos tão esquecidos certos resultados do trabalho dos geômetras dos séculos passados, e que voltássemos um pouco aos princípios quase sempre fáceis e muitas vezes engenhosos com os quais os grandes homens daquela época o haviam alcançado; porque não são tanto as verdades particulares, mas os métodos que não devem perecer.
+
+\hfill \textsc{Poncelet}
+\end{quote}
+ 
+
+
+\begin{quote}
+Esta é uma observação que podemos fazer em todas as nossas pesquisas matemáticas: estas quantidades auxiliares, estes cálculos longos e difíceis em que nos vemos arrastados, são quase sempre a prova de que a nossa mente não considerou, desde o início, as coisas em si mesmas e desde o início. uma visão bastante direta, já que precisamos de tantos artifícios e desvios para chegar lá; enquanto tudo se torna mais curto e simples assim que nos colocamos no verdadeiro ponto de vista.
+
+\hfill \textsc{Poinsot}
+\end{quote}
+
+
+ 
+\begin{quote}
+Parece que no estado atual das ciências matemáticas, a única maneira de evitar que o seu domínio se torne demasiado vasto para a nossa inteligência é generalizar cada vez mais as teorias que estas ciências abraçam, de modo que um pequeno número de verdades gerais e fecundas seja, na cabeça dos homens, a expressão abreviada da maior variedade de fatos particulares.
+
+\hfill \textsc{CHARLES DUPIN}
+\end{quote}
+ 
+
+
+\begin{quote}
+    Querendo resolver algum problema, devemos primeiro considerá-lo como já feito, e dar nomes a todas as linhas que parecem necessárias para construí-lo, tanto às que são desconhecidas como às que não o são. Então, sem considerar qualquer diferença entre essas retas conhecidas e desconhecidas... procuramos expressar a mesma quantidade de duas maneiras, o que é chamado de equação... Devemos encontrar tantas equações quantas supusemos. ser linhas que eram desconhecidas.
+
+\hfill \textsc{Descartes}
+\end{quote} 
+
+
+\begin{quote}
+Podemos estabelecer na Matemática outra classificação, baseada não mais no objeto da ciência, mas nos seus métodos. Deste novo ponto de vista, teríamos que distinguir dois tipos de Análise:
+
+\begin{enumerate}
+\item O de quantidades descontínuas;
+\item O das grandezas contínuas.
+\end{enumerate}
+
+Na primeira, procuramos as relações que existem entre certas quantidades fixas dadas \emph{a priori}. Este método é utilizado nas partes elementares da Matemática, e mais especialmente na Aritmética e no início da Geometria, exceto num pequeno número de teoremas fundamentais, cuja demonstração requer a noção de quantidades incomensuráveis.
+
+Na Análise de Quantidades Contínuas, pelo contrário, consideramos que os elementos da questão proposta podem variar em graus insensíveis e procuramos determinar as leis que regem as suas variações simultâneas.
+
+Este método, do qual Euclides e Arquimedes deram exemplos notáveis, caiu no esquecimento durante vários séculos, quando a memorável descoberta de Descartes sobre a aplicação da Álgebra à teoria das curvas obrigou os geômetras resolver as duas questões. que se impuseram a eles, o problema das tangentes e o das quadraturas.
+
+\hfill \textsc{Jordan}
+\end{quote}
+
+\section{Geometria e Análise}
+
+\begin{quote}
+A álgebra é apenas geometria escrita, a geometria é apenas álgebra figurada.
+
+\hfill \textsc{Sophie Germain}
+\end{quote}
+ 
+
+
+\begin{quote}
+    A álgebra é generosa, muitas vezes dá mais do que lhe é pedido.
+    
+\hfill \textsc{D'Alembert}
+\end{quote}
+
+ 
+\begin{quote}
+As sucessivas extensões que fizermos às operações e definições matemáticas devem estar sujeitas ao princípio da \emph{permanência das regras de cálculo}.
+
+\hfill \textsc{Hankel}
+\end{quote}
+ 
+\section{Filosofia e Moral}
+
+\begin{quote}
+Dispusestes tudo com medida, quantidade e peso
+
+\hfill \textsc{Bíblia}
+\end{quote}
+
+\begin{quote}
+Os números governam o mundo
+
+\hfill \textsc{Platão}
+\end{quote}
+ 
+\begin{quote}
+Há geometria em todos os lugares.
+
+\hfill \textsc{Leibniz}
+\end{quote}
+
+ 
+\begin{quote}
+Deus, o grande geômetra. --- Deus geometriza sem cessar.
+
+\hfill \textsc{Platão}
+\end{quote}
+ 
+
+\begin{quote}
+Deus é um círculo cujo centro está em toda parte e a circunferência em lugar nenhum.
+
+\hfill \textsc{Rabelais; Montaigne; Pascal}
+\end{quote}
+
+
+
+\begin{quote}
+Não há número aos olhos de Deus. Como ele vê tudo ao mesmo tempo, ele não conta nada.
+
+\hfill \textsc{Condillac}
+\end{quote}
+
+\begin{quote}
+No meio de causas variáveis e desconhecidas, que entendemos pelo nome de acaso, e que tornam incerto e irregular o curso dos acontecimentos, vemos nascer, à medida que se multiplicam, uma regularidade impressionante que parece ser um desígnio, e o que foi considerado prova da providência.
+
+\hfill \textsc{Laplace}
+\end{quote}
+
+\begin{quote}
+Não consigo conceber como matemáticos tão habilidosos negariam um matemático eterno.
+
+\hfill \textsc{Voltaire}
+\end{quote}
+
+
+\begin{quote}
+Não deixe ninguém entrar aqui, a menos que seja um geômetra.
+
+\hfill \textsc{Platão}
+\end{quote}
+
+ 
+
+\begin{quote}
+Sem a matemática não penetramos nas profundezas da filosofia: sem a filosofia não penetramos nas profundezas da matemática; sem ambos, não chegamos ao fundo de nada.
+
+\hfill \textsc{Bordas-Demoulins}
+\end{quote}
+
+ 
+\begin{quote}
+    O número reside em tudo o que é conhecido. Sem ele é impossível pensar alguma coisa, saber alguma coisa\dots  O número e a harmonia repelem o erro; o falso não combina com sua natureza. O erro e a inveja são filhos do indefinido, sem pensamento, sem razão; a falsidade nunca pode penetrar nos números, é seu eterno inimigo. Somente a verdade se adapta à natureza do número e nasce com ele.
+
+\hfill \textsc{Filolau}
+\end{quote}
+
+
+\begin{quote}
+Podemos olhar para a geometria como uma lógica prática, porque as verdades de que trata, sendo as mais simples e sensíveis de todas, são por isso as mais susceptíveis de uma aplicação fácil e palpável das regras do raciocínio.
+
+\hfill \textsc{D'Alembert}
+\end{quote}
+
+\begin{quote}
+Existem outras verdades além das verdades da álgebra, outras realidades além dos objetos sensíveis. Cultivemos com ardor as ciências matemáticas, sem querer estendê-las para além do seu domínio; e não imaginemos que podemos atacar a história com fórmulas, nem dar como sanção à moralidade teoremas de álgebra e cálculo integral.
+
+\hfill \textsc{Cauchy}
+\end{quote}
+
+ 
+
+
+\begin{quote}
+SÓCRATES.--- Façamos, portanto, uma lei àqueles que estão destinados entre nós a ocupar os primeiros lugares para se aplicarem à ciência do cálculo, para estudá-la, não superficialmente, mas até que, por meio da inteligência pura, consigam conhecer a essência dos números; não usar esta ciência, como os mercadores e negociantes, para vendas e compras, mas aplicá-la às necessidades da guerra e facilitar à alma o caminho que deve conduzi-la da esfera das coisas perecíveis à contemplação da verdade e ser.
+
+GLAUCO: Muito bem.
+
+(\dots)
+
+SÓCRATES: Se perguntarmos aos que se preocupam com esta ciência: “De quantos vocês estão falando? Onde estão essas unidades tais como vocês supõem que sejam, perfeitamente iguais entre si, sem a menor diferença, e que não são compostas de partes? Meu caro Glauco, o que você acha que eles respondem?
+
+GLAUCO.---Creio que responderiam que estão falando desses números que não cabem aos sentidos e que não podem ser apreendidos de outra forma senão pelo pensamento.
+
+SÓCRATES: Então você vê, meu caro amigo, que não podemos absolutamente prescindir desta ciência, pois é óbvio que ela obriga a alma a usar o entendimento para conhecer a verdade.
+
+GLAUCO.--- É certo que é maravilhosamente adequado para produzir este efeito.
+
+SÓCRATES.---Você também observou que aqueles que nascem calculadores, tendo o espírito de combinação, têm grande facilidade para quase todas as outras ciências e que mesmo as mentes pesadas, quando se exercitaram e se acostumaram ao cálculo, pelo menos obtêm esta vantagem? de adquirir maior facilidade e penetração?
+
+GLAUCO A coisa é assim.
+
+SÓCRATES: Além disso, seria difícil para você encontrar muitas ciências que custassem mais para aprender e estudar em profundidade do que esta.
+
+GLAUCO: Acredito.
+
+SÓCRATES.---Assim, por todas estas razões, não devemos negligenciá-lo; mas aqueles que nascem com um caráter excelente devem aplicá-lo desde cedo.
+
+GLAUCO.---Eu concordo.
+
+\hfill \textsc{Platão}
+\end{quote}
+ 
+
+\begin{quote}
+Aqueles que só vêem na matemática a sua utilidade de aplicação ordinária têm uma ideia muito imperfeita dela; seria, na verdade, adquirir muito pouco com grandes despesas; porque, com exceção de cientistas e alguns artistas, dificilmente vejo alguém que precise de Geometria ou Álgebra uma vez na vida. Não são, portanto, nem as teorias, nem os processos, nem os cálculos em si, que são verdadeiramente úteis, é a sua sequência admirável, é o exercício que dão à mente, é a boa e fina lógica que aí introduzem. para sempre.
+
+A matemática goza desta vantagem inestimável, e sem a qual muitas vezes seria supérfluo estudá-la, é que não é necessário conhecê-la atualmente para sentir suas vantagens, mas basta conhecê-la bem; todas as operações, todas as teorias que nos ensinam podem sair da memória, mas permanecem a precisão e a força que conferem ao nosso raciocínio; o espírito da matemática permanece como uma tocha que nos serve de guia em meio às nossas leituras e pesquisas; é ele quem, dissipando a multidão ociosa de ideias estrangeiras, tão rapidamente nos revela o erro e a verdade; é através dele que as mentes atentas, nas discussões mais irregulares, voltam constantemente ao objeto principal, que nunca perdem de vista; é assim que encurtam o tempo e o tédio, colhem facilmente os frutos das boas obras e passam por aqueles volumes vãos e numerosos onde se perdem as mentes vulgares. Se a matemática encontrou muitos detratores, é porque seu esclarecimento importuno destrói todos os sistemas vãos nos quais as mentes falsas têm prazer. Isto porque se a matemática deixasse de ser a própria verdade, uma série de obras ridículas tornar-se-iam muito sérias; muitos até começariam a ser sublimes; mas era muito natural que mentes superiores e os melhores escritores falassem das ciências exatas apenas com uma espécie de admiração; grandes homens, em qualquer gênero, nunca engolem grandes coisas; eles tentam subir lá.
+
+\hfill \textsc{Poinsot}
+\end{quote}
+
+\begin{quote}
+O avanço e a melhoria na matemática estão ligados à prosperidade do Estado.
+
+\hfill \textsc{Napoleão}
+\end{quote}
+
+\begin{quote}
+Uma rigorosa disciplina da mente prepara para os deveres militares, e não há dúvida de que os estudos matemáticos contribuem para formar esta faculdade de abstração essencial aos líderes para formar uma representação interna, uma imagem de ação, pela qual avançam, esquecendo o perigo, no tumulto e escuridão do combate.
+
+\hfill \textsc{Hermite}
+\end{quote}
+ 
+
+\begin{quote}
+O que passa pela geometria nos ultrapassa.
+
+\hfill \textsc{Pascal}
+\end{quote}
+
+ 
+
+\begin{quote}
+    Nenhuma investigação humana deveria ser chamada de verdadeira ciência se não envolver demonstrações matemáticas.
+
+\hfill \textsc{Leonardo da Vinci}
+\end{quote}
+
+ 
+\begin{quote}
+Medir é saber.
+
+\hfill \textsc{Kepler}
+\end{quote}
+
+ 
+\begin{quote}
+A ação dos nossos sentidos e a do nosso entendimento têm limites; o cálculo não tem nenhum.
+
+\hfill \textsc{Portalis}
+\end{quote}
+ 
+\begin{quote}
+Devemos antes confiar no cálculo algébrico do que no nosso julgamento.
+
+\hfill \textsc{Euler}
+\end{quote}
+
+ 
+\begin{quote}
+A vida só é boa para estudar e ensinar matemática.
+
+\hfill \textsc{Poisson}
+\end{quote}
+
+ 
+\begin{quote}
+A arte é a expressão máxima de uma aritmética interior e inconsciente.
+
+\hfill \textsc{Leibniz}
+\end{quote}
+
+
+\begin{quote}
+O cálculo é necessário para todos que não sabem, ou que não podem, ou que não querem pensar muito.
+
+\hfill \textsc{De Ramsay}
+\end{quote}
+
+ 
+
+
+
+\begin{quote}
+Eu compararia de bom grado as luzes da matemática com esses pálidos sóis do norte, sob os quais permanecemos congelados... Eles só fazem florescer flores sem perfume e frutas sem sabor.
+
+\hfill \textsc{Dupanloup}
+\end{quote}
+
+ 
+\begin{quote}
+A lógica rigorosa, a busca e o amor pela verdade por si só, constituem a parte \emph{moral} da matemática, que, portanto, pertence essencialmente à escola estóica. Oferecer aos jovens, no início da vida, aplicações \emph{úteis}, métodos de \emph{aproximação}, como objeto principal de estudo, é distorcer o objetivo da educação e isso pode ter resultados desastrosos. Contudo, este \emph{rigor} não deve ser confundido com a mania demonstrativa, que, desconfiando do bom senso, priva o leitor de toda espontaneidade.... Saber o que não dizer é uma arte difícil, que raramente encontramos.
+
+\hfill \textsc{O. Terquem}
+\end{quote}
+
+ 
+\begin{quote}
+Em tudo o que empreendemos, devemos dar dois terços à razão e o outro terço ao acaso. Aumente a primeira fração, você será pusilânime; aumente o segundo, você será imprudente.
+
+\hfill \textsc{Napoleão}
+\end{quote}
+ 
+
+ 
+\begin{quote}
+As transformações da alma são lentas; eles só acontecem com a dor multiplicada pelo tempo.
+
+\hfill \textsc{Le P. Didon}
+\end{quote}
+
+\begin{quote}
+A matemática pura é uma chave de ouro que abre todas as ciências.
+
+\hfill \textsc{V. Duruy}
+\end{quote}
+
+
+\begin{quote}
+Criar em nós mesmos a arte do raciocínio, e especialmente do raciocínio geométrico, é apenas uma parte muito pequena da educação. São os sentimentos que nos conduzem, não a lógica ou a geometria.
+
+\hfill \textsc{A. Croiset}
+\end{quote}
+
+ 
+\begin{quote}
+Nada é menos aplicável à vida do que o raciocínio matemático. Uma proposição, em termos de números, é decididamente falsa ou verdadeira; em todos os outros aspectos, a verdade se mistura com a falsidade...
+
+\hfill \textsc{Mme De Staël}
+\end{quote}
+
+\begin{quote}
+A lógica tomou emprestadas as regras da geometria sem compreender a sua força... Estou longe de colocar os lógicos em paralelo com os geômetras que aprendem a verdadeira maneira de conduzir a razão\dots  Os lógicos professam conduzir até lá, apenas os geômetras conseguem, e fora da sua ciência não há demonstração real.
+
+\hfill \textsc{Pascal}
+\end{quote}
+
+
+\begin{quote}
+Pascal confunde arte com ciência e, como os lógicos não conduzem infalivelmente à verdade, ele sacrifica a lógica à sua amada matemática. É Leibniz quem tem toda a razão quando diz, ao contrário de Pascal: ``A lógica dos geómetras é uma extensão ou promoção particular da lógica geral''. A matemática toma emprestado, portanto, o poder da sua forma à lógica, em vez de dar-lhe.
+
+\hfill \textsc{Barthélemy Saint-Hilaire}
+\end{quote}
+
+ 
+\begin{quote}
+A razão matemática contenta-se em fornecer, no domínio mais favorável, um tipo de clareza, precisão e consistência cuja simples contemplação familiar pode dispor a mente a tornar outras concepções tão perfeitas quanto a sua natureza o permite.
+
+\hfill \textsc{Aug. Comte}
+\end{quote}.
+
+
+\begin{quote}
+O gosto pela exactidão, a impossibilidade de se contentar com noções vagas, de se apegar a hipóteses por mais atractivas que sejam, a necessidade de ver claramente a ligação das proposições e o objectivo a que se dirigem, são os frutos mais preciosos do estudo da matemática.
+
+\hfill \textsc{Lacroix}
+\end{quote}
+ 
+\begin{quote}
+As delicadas nuances das ideias morais escapam ao rigor do raciocínio matemático, e um hábito demasiado exclusivo destes muitas vezes leva a mente a querer reduzir tudo a regras invariáveis, a princípios absolutos; um método bem perigoso, quando o aplicamos ao governo das sociedades humanas, ou apenas às relações específicas que nos ligam a outros homens.
+
+\hfill \textsc{Cuvier}
+\end{quote}
+
+
+\begin{quote}
+Na Matemática, a censura e a crítica não podem ser permitidas a todos; os discursos dos retóricos e as defesas dos advogados são inúteis.
+
+\hfill \textsc{Viète}
+\end{quote}
+ 
+\begin{quote}
+Há oito dias vi o primeiro raio de luz; há três anos vi a luz do dia; finalmente, a esta hora, vejo o sol da mais admirável contemplação. Nada mais me detém, abandono-me ao meu entusiasmo; Quero desafiar os mortais pela franca confissão de que roubei os vasos de ouro dos egípcios, para formar um tabernáculo para o meu Deus longe do Egito idólatra. Se sou perdoado, me alegro; se alguém fica irritado, eu me resigno. A sorte está lançada, estou escrevendo meu livro. Vamos lê-lo na era presente ou no futuro, o que isso importa para mim! Ele pode esperar pelo seu leitor: Deus não esperou seis mil anos para se dar um contemplador das suas obras?
+
+\hfill \textsc{Kepler}
+\end{quote}
+
+\begin{quote}
+Parece-me que eu era apenas uma criança brincando à beira-mar e encontrando, ora uma pedra mais polida, ora uma concha mais bonita que as outras, enquanto o vasto oceano da Verdade se estendia inexplorado à minha frente.
+\hfill \textsc{Newton}
+\end{quote}
+
+ 
+\begin{quote} 
+O único objectivo da Ciência é a honra do espírito humano e, como tal, uma questão da teoria dos números é tão valiosa como uma questão do sistema do mundo.
+
+\hfill \textsc{Jacobi}
+\end{quote}
+
+ 
+
+% Mini bios 
+% Seja informal e divertido
+% Prefira fotos com fundo branco
+
+\vfill
+
+Alphonse Michel Rebière (Tulle, 1842 – Paris, 1900) foi um defensor das habilidades científicas das mulheres no século XIX. Ele escreveu o livro \emph{Les Femmes dans la science}, publicado em 1894. O artigo de Rebière seguiu o formato de enciclopédia, listando as mulheres em ordem alfabética, dando seus nomes, datas de nascimento, as condições sociais em que viveram, suas contribuições e publicações. Seu trabalho foi revolucionário, pois outros trabalhos com informações semelhantes nunca foram publicados, e ele foi um dos primeiros a incluir mulheres no campo da ciência.
+
+\end{document}

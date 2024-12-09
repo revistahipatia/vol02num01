@@ -170,7 +170,8 @@
 \newcommand{\epistolapage}{1}
 \newcommand{\historiapage}{3}
 \newcommand{\tecnicapage}{15}
-\newcommand{\simposiopage}{26}
-\newcommand{\problemapage}{36}
+\newcommand{\antologiapage}{26}
+\newcommand{\simposiopage}{33}
+\newcommand{\problemapage}{43}
 \bibliographystyle{plain}
 \addto{\captionsbrazil}{\renewcommand{\refname}{Bibliografia}}
