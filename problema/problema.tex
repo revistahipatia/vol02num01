@@ -79,7 +79,7 @@ $$\displaystyle \int_0^{\pi/2} \cos^2 (\cos x)dx + \int_0^{\pi/2} \sen^2 (\sen x
 \begin{solution*}
 Com a mudança de variável $y=\pi/2-x$, temos $dy = -dx$ e 
 \begin{eqnarray*}
-\int_0^{\pi/2} \sen^2 (\sen x)dx & = & \int_{\pi/2}^{0} \sen^2 (\sen (\pi/2-y)))(-dy) \\
+\int_0^{\pi/2} \sen^2 (\sen x)dx & = & \int_{\pi/2}^{0} \sen^2 (\sen (\pi/2-y))(-dy) \\
                                 & = & \int_{0}^{\pi/2} \sen^2 (\cos y)dy \\
 \end{eqnarray*}
 \noindent Como $\cos^2 (\cos x)+\sen^2(\cos x)=1$, segue que 
@@ -101,7 +101,7 @@ $$a_{ij} = \left \{ \begin{array}{cl} \sqrt{3}, & \text{se}\,\,i=j \\1, & \text{
 \end{problem*}
 
 \begin{solution*}
-Defina como $A_n$ uma matriz $n \times n $ definida pelas mesmas regras e seja $D_n - \det A_n$. Pelo desenvolimento do determinante pela regra de Laplace com relação a primeira linha, temos 
+Defina como $A_n$ uma matriz $n \times n $ definida pelas mesmas regras e seja $D_n = \det A_n$. Pelo desenvolimento do determinante pela regra de Laplace com relação a primeira linha, temos 
 $$ D_n = \sqrt{3}D_{n-1}-D_{n-2}.$$
 A equação característica é 
 
@@ -248,7 +248,7 @@ Bernardo está brincando de desenhar quadriláteros em um papel pontilhado como 
 
 \item Dado qualquer triângulo com vértices nos reticulados, se dois de seus vértices estão na horizontal ou vertical (em relação aos lados do papel), a distância entre eles é um número inteiro $b$. A altura $h$ do terceiro vértice a esses dois também é um inteiro $h$. A área do triângulo é, portanto, 
 
-$$\dfrac{b \cdot h}{2} \geq \dfrac{1}{2}.\,cm^2$$
+$$\dfrac{b \cdot h}{2} \geq \dfrac{1}{2}\,\mathrm{cm}^2$$
 
 \noindent Veja que realmente existem triângulos com área $1/2$. Basta considerar um quadradinho $1 \times 1$ do papel e dividi-lo ao meio por uma de suas diagonais. Veja que o argumento anterior mostra que a área de qualquer triângulo com lados paralelos aos lados da folha é da forma $n/2$, em que $n$ é um número inteiro. Para terminar, precisamos considerar os triângulo $ABC$ que não possuem lados paralelos aos da folha, como na figura a seguir.
 
@@ -279,7 +279,7 @@ $$A = 3 + \dfrac{13}{2}-1 = 8,5\,cm^2.$$
 
 
 \begin{problem*}
-O número de todos os inteiros positivos de 64 digitos sem zeros em sua representação e que são divisíveis por $101$ é par ou ímpar?
+O número de todos os inteiros positivos de 64 dígitos sem zeros em sua representação e que são divisíveis por $101$ é par ou ímpar?
 \end{problem*}
 
 \begin{solution*}
